@@ -1,0 +1,13 @@
+can we access docker desktop over web?
+
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Password@123" -e "MSSQL_PID=Evaluation" -p 1433:1433  --name sqlpreview --hostname sqlpreview -d mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
+
+https://labex.io/labs/docker-your-first-docker-lab-92719?course=quick-start-with-docker
+
+
+
+Password@123
+
+docker exec -it cefc2b48779d /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'yourStrong(!)Password'
+
+https://killercoda.com/playgrounds/scenario/kubernetes
